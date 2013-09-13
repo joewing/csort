@@ -13,8 +13,8 @@ void QuickSort(int *array, int size) {
    pivot = array[0];
    for(;;) {
 
-      while(array[a] < pivot && a < size) a += 1;
-      while(array[b] > pivot && b > 0) b -= 1;
+      while(a < size && array[a] < pivot) a += 1;
+      while(b >= 0 && array[b] > pivot) b -= 1;
 
       if(a > b) break;
 
