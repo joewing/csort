@@ -27,8 +27,10 @@ void QuickSort(int *array, int size) {
 
    }
 
-   if(size > 1) {
+   if(a > 1) {
       QuickSort(array, a);
+   }
+   if(size - a > 1) {
       QuickSort(array + a, size - a);
    }
 
