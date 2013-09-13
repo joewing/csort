@@ -10,6 +10,7 @@ void HeapSort(int*, int);
 void InsertionSort(int*, int);
 void MergeSort(int*, int);
 void QuickSort(int*, int);
+void RadixSort(int*, int);
 void SelectionSort(int*, int);
 void ShellSort(int*, int);
 
@@ -22,6 +23,7 @@ static struct {
    { "insert",    InsertionSort  },
    { "merge",     MergeSort      },
    { "quick",     QuickSort      },
+   { "radix",     RadixSort      },
    { "select",    SelectionSort  },
    { "shell",     ShellSort      }
 };

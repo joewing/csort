@@ -1,7 +1,4 @@
 
-/** The number of bits in each item to be sorted. */
-#define BIT_COUNT 32
-
 static void DoRadixSort(unsigned int *array, int size, int bit_index);
 
 /** Sort an array in ascending order using Radix Sort.
@@ -9,7 +6,8 @@ static void DoRadixSort(unsigned int *array, int size, int bit_index);
  * @param size The number of elements in the array.
  */
 void RadixSort(int *array, int size) {
-   DoRadixSort((unsigned int*)array, size, BIT_COUNT - 1);
+   const int bit_count = 8 * sizeof(int);
+   DoRadixSort((unsigned int*)array, size, bit_count - 1);
 }
 
 /** Helper method for Radix Sort.

@@ -10,6 +10,7 @@ OBJECTS=main.o \
    insert.o \
    merge.o \
    quick.o \
+   radix.o \
    select.o \
    shell.o
 
